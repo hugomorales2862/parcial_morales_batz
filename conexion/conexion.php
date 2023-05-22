@@ -18,15 +18,15 @@
 
         public static function ejecutar($sql){
 
-        self::conectar();
+            self::conectar();
 
-        $sentencia = self::$conexion->prepare($sql);
+            $sentencia = self::$conexion->prepare($sql);
        
-        $resultado = $sentencia->execute();
+            $resultado = $sentencia->execute();
        
-        self::$conexion = null;
+            self::$conexion = null;
        
-        return $resultado;    
+            return $resultado;    
     
      }
 
