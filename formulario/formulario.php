@@ -39,7 +39,7 @@
                 <div class="row mb-3">
                     <div class="col">
                         <label for="creditos">Creditos correspondientes al curso</label>
-                        <input type="date" name="creditos" id="creditos" class="form-control">
+                        <input type="text " name="creditos" id="creditos" class="form-control">
                     </div>
                 </div>
             
