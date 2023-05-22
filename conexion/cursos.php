@@ -19,8 +19,8 @@ class Curso extends Conexion {
     }
     public function guardar (){
         $sql= "INSERT INTO curso(id,nombre,periodos,fase,instructor,creditos) values('$this->id','$this->nombre','$this->periodos','$this->fase','$this->instructor','$this->creditos')";    
-        echo $sql;
-        exit;
+        // echo $sql;
+        // exit;
         $resultado = $this->ejecutar($sql);
         return $resultado;
        
