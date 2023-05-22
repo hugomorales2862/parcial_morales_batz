@@ -1,9 +1,9 @@
 <?php
-require '../parcial_morales_batz/conexion/cursos.php';
+require '../conexion/cursos.php';
 
 try {
     $curso = new Curso ($_POST);
-    $resultado = $producto-> guardar();
+    $resultado = $curso-> guardar();
     $error = "NO SE GUARDARON LOS DATOS";
 
 } catch (PDOException $e) {
