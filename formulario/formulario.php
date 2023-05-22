@@ -13,8 +13,44 @@
         <div class="row justify-content-center">
             <form action="../datos/guardar.php" method="POST" class="col-lg-8 border bg-light p-3">
                 <div class="row mb-3">
-                   
+                    <div class="col">
+                        <label for="nombre">Nombre del curso</label>
+                        <input type="text" name="nombre" id="nombre" class="form-control">
+                    </div>
                 </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="periodos">Cantidad de periodos</label>
+                        <input type="number" name="periodos" id="periodos" class="form-control">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="fase"></label>Fase en la cual se inparte 
+                        <input type="text" name="fase" id="fase" class="form-control">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="instructor">Nombre del instructor</label>
+                        <input type="text" name="instructor" id="instructor" class="form-control">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="creditos">Creditos correspondientes al curso</label>
+                        <input type="date" name="creditos" id="creditos" class="form-control">
+                    </div>
+                </div>
+            
+                <div class="row mb-3">
+                    <div class="col">
+                        <button type="submit" class="btn btn-primary w-100">Guardar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
     
 </body>
 </html>
