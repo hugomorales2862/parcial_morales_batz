@@ -3,7 +3,7 @@
 abstract class Conexion {
     public static $conexion = null;
 
-    private static function conectar (){
+    private static function conectar(){
         try {
             self::$conexion = new PDO ('informix:host=host.docker.internal; service=9088; database=mdn; server=informix; protocol=onsoctcp;EnableScrollableCursors = 1','informix','in4mix');
             ECHO "CONECTADO";
@@ -15,5 +15,9 @@ abstract class Conexion {
         }
         return self::$conexion;
     }
+
+public static function ejecutar ($sql){
+    s
+}
 
 }
