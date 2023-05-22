@@ -16,8 +16,12 @@ class Curso extends Conexion {
         $this-> fase = $args ['fase'] ?? null;
         $this-> instructor = $args ['instructor'] ?? null;
         $this-> creditos = $args ['creditos'] ?? null;
-    
-
+    }
+    public function guardar (){
+        $sql= "INSERT INTO curso(id,nombre,periodos,fase,instructor,creditos) values('$this->id','$this->nombre','$this->periodos','$this->fase','$this->instructor','$this->creditos')";    
+        $resultado = $this->ejecutar($sql);
+        return $resultado;
+       
     }
 
 }
