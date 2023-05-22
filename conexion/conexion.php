@@ -17,12 +17,18 @@
         }
 
         public static function ejecutar($sql){
+
         self::conectar();
+
         $sentencia = self::$conexion->prepare($sql);
+       
         $resultado = $sentencia->execute();
+       
         self::$conexion = null;
-         return $resultado;    
+       
+        return $resultado;    
     
      }
 
 }
+?>
